@@ -14,13 +14,14 @@
     <div class="container">
         <header class="header">
             <div class="contenedor-nav">
-                <nav class="nav">
+                <nav class="nav" id="nav">
                     <div class="logo">
                         <img src="/img/descarga (1).png" width="70px;" height="70px;" alt="imagen taza de cafe ">
                         <h1>Coffe</h1>
                     </div>
                         <div>
-                            <ul class="ul-items">
+                            <button class="mostrar" onclick="abrir()" ondblclick="cerrar()"> ☰ </button>
+                            <ul class="ul-items" id="menu-desplegable"  >
                                 <li class="li-items"> <a href="#"> Home </a></li>
                                 <li class="li-items">  <a href="#contacto"> Contacto</a> </li>
                                 <li  class="li-items"> <a  href="#menu">Menu</a> </li>
@@ -198,5 +199,7 @@
      Derechos reservados &copy
   </p>
 </footer>
+
+<script src="./js/index.js"></script>
 </body>
 </html>
