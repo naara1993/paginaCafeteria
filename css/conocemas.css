@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: larger;  
+}
+.container{
+    padding:20px;
+}
+li,a{
+    list-style: none;
+    text-decoration:none;
+    color:black;
+
+    
+}
+.nav,.ul-items{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 20px;
+}
+.enlance-cover{
+    color: white;
+}
+.li-items{
+  margin: 25px;
+}
+.cover{
+    height:500px;
+    color:white;
+    background-image: url(/img/istockphoto-1323637777-170667a.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: darken;
+}
+.cover-card{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    padding-top:25%;
+    padding-left: 5%;
+    text-align: start;
+}
+.title-card{
+    font-size: xx-large;
+    margin-bottom: 2%;
+}
+.parrafo{
+    font-size: larger;
+}
+.float-rigth{
+    display: flex;
+    height:250px;
+    padding-right: 5%;
+    justify-content:center;
+    justify-content:space-evenly;
+  
+
+}
+.container-section{
+    padding-top: 10px;
+}
+.tarjeta-section{
+    width: 55%;
+    margin-top: 1%;
+    
+}
+.slider {
+    margin-top:3%;
+    overflow-x: scroll;
+}
+.img{
+    object-fit: contain;
+    height: 300px;
+    flex:0 0 100%;
+    display: flex;
+}
+.slider-container{
+    flex-shrink: 0;
+    display: flex;
+    transform:translateX(0);
+    animation: 15s slider infinite;
+}
+.slider{
+    overflow-x: hidden;
+}
+.container-title{
+    padding-top:3%;
+    text-align: center;
+}
+@keyframes slider {
+    0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%); }
+
+	35% { transform: translateX(-200%); }
+	50% { transform: translateX(-200%); }
+
+	55% { transform: translateX(-300%); }
+	70% { transform: translateX(-300%); }
+
+	75% { transform: translateX(-400%); }
+	90% { transform: translateX(-400%); }
+
+	95% { transform: translateX(-500%); }
+	100% { transform: translateX(-500%); }
+}
+
+footer{
+    height:60px;
+    padding:20px;
+    padding-bottom: 5%;
+}
+.footer-p{
+    text-align: center;
+}
